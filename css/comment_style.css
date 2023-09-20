@@ -1,0 +1,19 @@
+
+.comment-content {
+    background: #f8f9fa; 
+    border-left: 1px solid black;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.link-comment-animathion {
+    animation-name: col;
+    animation-duration: 2s;
+}
+  
+@keyframes col {
+    0%   {background-color:#ffffff;}
+    65%   {background-color:#e1e2e4;}
+    100% {background-color:#f8f9fa;}
+}
+

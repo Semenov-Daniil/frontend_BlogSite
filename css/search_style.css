@@ -1,0 +1,101 @@
+.search_div {
+    border: 2px solid #cacaca;
+    border-color: #cacaca;
+    border-radius: 15px;
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    height: 40px;
+    min-width: 100px;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+    
+}
+
+.search_input {
+    margin-left: 8px;
+    border: none;
+    background: transparent;
+
+    display: block;
+    outline: none;
+    
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+
+    width: 10px;
+    font-family: "Lora", Arial, serif;
+}
+
+.search_cence_btn {
+    width: 25px;
+    height: 100%;
+
+    margin-left: 8px;
+    margin-right: 8px;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 .05rem;
+    cursor: pointer;
+
+    display: inherit;
+    visibility: visible;
+
+    background: transparent;
+    outline: none;
+    border: none;
+
+
+    align-self: auto;
+}
+
+.search_cence_svg {
+    height: 45px;
+    width: 45px;
+    transition: color .15s ease-out;
+    color: var(--color-g-text-tertiary);
+}
+
+.search_cence_svg:hover {
+    color: #1eafed;
+}
+
+.search_sumbit_btn {
+    border-radius: 15px;
+    margin: 2px;
+    padding: 0 20px;
+    align-self: auto;
+    width: auto;
+    font-family: "Lora", Arial, serif;
+
+    font-weight: 500;
+    cursor: pointer;
+    color: #000;
+
+    display: block;
+
+    border: none;
+    background: #1eafed;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    
+}
+
+.highlighted {
+    margin-right: 0px;
+    animation-name: highlighted-text;
+    animation-duration: 7s;
+}
+  
+@keyframes highlighted-text {
+    0%   {background-color:#1eafed;}
+    100% {background-color:none;}
+}
+
+.not-search {
+    word-wrap: break-word;
+}

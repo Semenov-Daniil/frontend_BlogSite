@@ -1,0 +1,34 @@
+.arrow_sort_svg {
+    height: 15px;
+    width: 15px;
+    transition: color .15s ease-out;
+    color: #818181;
+}
+
+.arrow_sort_svg:hover {
+    color: #1eafed;
+}
+
+.options-sort:hover svg {
+    color: #1eafed;
+}
+
+.options-sort {
+    cursor: pointer;
+}
+
+.header-table-user th[sort="not-active"] svg {
+    display: none;
+}
+
+.header-table-user th[sort="sort-asc"] svg {
+    transition: transform .3s;
+    transform-origin: center center;
+    transform: rotate(0deg);
+}
+
+.header-table-user th[sort="sort-desc"] svg {
+    transition: transform .3s;
+    transform-origin: center center;
+    transform: rotate(-180deg);
+}

@@ -1,0 +1,13 @@
+
+.active-react {
+    color: #1eafed;
+    fill: #1eafed;
+}
+
+.iconc-reaction {
+    cursor: pointer;
+}
+
+.iconc-reaction:hover {
+    color: #1eafed;
+}

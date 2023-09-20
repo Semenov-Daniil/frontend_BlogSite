@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SportBlog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/daterangepicker.css">
+    <link rel="stylesheet" href="css/upload_file.css">
+    <link rel="stylesheet" href="css/avatar_style.css">
+    <link rel="stylesheet" href="css/search_style.css">
+    <link rel="stylesheet" href="css/sort_selection.css">
+    <link rel="stylesheet" href="css/account_style.css">
+    <link rel="stylesheet" href="css/users_sort_searcht_style.css">
+    <link rel="stylesheet" href="css/comment_style.css">
+    <link rel="stylesheet" href="css/reaction_style.css">
+
+    <style>
+        .not-active {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+	<div id="colorlib-page" >
+		<aside id="colorlib-aside" role="complementary" class="js-fullheight">
+			<nav id="colorlib-main-menu" role="navigation">
+				<ul>
+					<li><a class="colorlib-active link" href="" data-section="index">Главная</a></li>
+					<li><a class="link" href="" data-section="blogs" data-pag="0">Блоги</a></li>
+					<li class="about"><a class="link" href="" data-section="about">О нас</a></li>
+					<li class="identity_user"><a class="link" href="" data-section="login">Вход</a> / <a class="link" href="" data-section="register">Регистрация</a></li>
+					<li class="not-active exting_user"><a class="link" href="" data-section="exting">Выход</a></li>
+				</ul>
+			</nav>
+		</aside> <!-- END MENU -->
+		<div id="colorlib-main">
+
+            <!-- index -->
+			<section class="ftco-no-pt ftco-no-pb index">
+				<div class="container">
+					<div class="row d-flex" >
+						<div class="col-xl-8 py-5 px-md-2">
+							<div class="row pt-md-4 list-10-posts">
+                                <!-- List 10 posts -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- blogs -->
+            <section class="ftco-no-pt ftco-no-pb not-active blogs">
+				<div class="container">
+					<div class="row d-flex">
+						<div class="col-xl-8 col-md-8 py-5 px-md-2 page-blogs">
+                            <form action="" method="POST">
+                                <div class="search_div">
+                                    <input class="search_input" name="search" placeholder="Поиск" type="text" id="search">
+                                    <button type="button" class="search_cence_btn not-active" title="Очистить поисковой запрос">
+                                        <svg  class="search_cence_svg" viewBox="0 0 32 32" height="45px" width="45px" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <path id="cence_svg" fill-rule="evenodd" clip-rule="evenodd" d="M23.66 6.96 16 14.63 8.32 6.96 6.95 8.33 14.62 16l-7.67 7.67 1.37 1.37 7.67-7.68 7.67 7.68 
+                                            1.37-1.37L17.36 16l7.67-7.67-1.37-1.37Z" fill="inherit"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="search_sumbit_btn not-active">Найти</button>
+                                </div>
+                            </form>
+
+                            <div class="menu-action">
+
+                                <div class="conteiner-selection-sort">
+                                    <label for="selection">Сортировка постов:</label>
+                                    <select name="selection-sort" id="selection" class="selection-sort">
+                                        <option value="desc_create_time">от новых к старым</option>
+                                        <option value="asc_create_time">от старых к новым</option>
+                                        <option value="asc_title">по названию от a-я</option>
+                                        <option value="desc_title">по названию от я-а</option>
+                                        <option value="desc_count_comments">по убыв. количеству комментариев</option>
+                                        <option value="asc_count_comments">по возр. количеству комментариев</option>
+                                        <option value="desc_count_views">по убыв. количеству просмотров</option>
+                                        <option value="asc_count_views">по возр. количеству просмотров</option>
+                                        <option value="desc_count_like">по количеству лайков</option>
+                                        <option value="desc_count_dislike">по количеству дизлайков</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="row div-creat-post not-active">
+                                    <div class="col-md-12 col-lg-12">
+                                        <div>
+                                            <a href="" class="btn btn-outline-success link" data-section="post-action">📝 Создать пост</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="not-search list-posts">
+                                <!-- blogs -->
+                            </div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- account -->
+            <section class="ftco-no-pt ftco-no-pb not-active account">
+                <div class="account-info">
+                    <img src="images/avatars/default.jpg" class="user-avatar" alt="Image placeholder">
+                    <div class="user-info">
+                        <h1 class="user-login">Login</h1>
+                        <div class="activity-user">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="7" fill="currentColor" class="bi bi-circle-fill index-active" viewBox="0 0 16 16">
+                                <circle cx="8" cy="8" r="8"/>
+                            </svg>
+                            <span class="online-offline"></span>
+                            <span class="last-time not-active"></span>
+                            <span class="reg-date"></span>
+                            <span class="count-posts"></span>
+                        </div>
+                        <div class="email-user">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+                                <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/>
+                            </svg>:
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="setting">
+                        
+                    </div>
+                </div>
+
+				<div class="container">
+					<div class="row d-flex data-user">
+                        
+						<div class="menu-navigation-account">
+
+                        </div>
+                        
+					    <div class="user-content" data-id-user="">
+                            
+						</div>
+				    </div>
+                </div>
+			</section>
+
+            <!-- users -->
+            <section class="contact-section px-md-4 pt-5 not-active users">
+				<div class="container" style="height: 100%">
+					<div class="row block-9">
+						<div class="col-lg-12">
+							<div class="row">
+								<div class="col-md-12 mb-1">
+									<h3 class="h3">Пользователи</h3>
+								</div>
+							</div>
+                            <div class="search_div">
+                                <input class="search_input" name="search" placeholder="Поиск" type="text">
+                                <button type="button" class="search_cence_btn not-active" title="Очистить поисковой запрос">
+                                    <svg  class="search_cence_svg" viewBox="0 0 32 32" height="45px" width="45px" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                        <path id="cence_svg" fill-rule="evenodd" clip-rule="evenodd" d="M23.66 6.96 16 14.63 8.32 6.96 6.95 8.33 14.62 16l-7.67 7.67 1.37 1.37 7.67-7.68 7.67 7.68 
+                                        1.37-1.37L17.36 16l7.67-7.67-1.37-1.37Z" fill="inherit"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                         
+							<div class="row">
+								<div class="col-md-12 mb-1">
+									<table class="table table-striped">
+										<thead>
+											<tr class="header-table-user">
+												<th scope="col" class="options-sort" title="Нажмите, чтобы отсортировать по возрастанию или убыванию" sort="sort-asc" name="id">
+                                                    ID
+                                                    <svg class="arrow_sort_svg rotate-icon" width="15" height="15" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                                        <g>
+                                                            <path transform="rotate(90, 25, 25)" d="m20.01552,25.00001l29.19841,-24.50298l-19.22945,0l-29.19841,24.50298l29.19841,24.50296l19.22945,0l-29.19841,-24.50296z" 
+                                                        fill-rule="evenodd" clip-rule="evenodd" fill="inherit"/>
+                                                        </g>
+                                                    </svg>
+                                                </th>
+												<th scope="col" class="options-sort" title="Нажмите, чтобы отсортировать по возрастанию или убыванию" sort="not-active" name="name">
+                                                    Name
+                                                </th>
+												<th scope="col" class="options-sort" title="Нажмите, чтобы отсортировать по возрастанию или убыванию" sort="not-active" name="surname">
+                                                    Surname
+                                                </th>
+												<th scope="col" class="options-sort" title="Нажмите, чтобы отсортировать по возрастанию или убыванию" sort="not-active" name="login">
+                                                    Login
+                                                </th>
+												<th scope="col" class="options-sort" title="Нажмите, чтобы отсортировать по возрастанию или убыванию" sort="not-active" name="email">
+                                                    E-mail
+                                                </th>
+                                                <th scope="col" class="options-sort" title="Нажмите, чтобы отсортировать по возрастанию или убыванию" sort="not-active" name="active">
+                                                    Active
+                                                </th>
+												<th scope="col">Temp block</th>
+												<th scope="col">Permanent block</th>
+												<th scope="col" class="options-sort" title="Нажмите, чтобы отсортировать по возрастанию или убыванию" sort="not-active" name="block-time">
+                                                    Block time
+                                                </th>
+											</tr>
+										</thead>
+										<tbody class="list-users">
+                                            <!-- list users -->
+										</tbody>
+									</table>
+                                    <div class="users-errors"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- about -->
+            <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb not-active about">
+                <div class="container-fluid px-0" style="height: 100%">
+                  <div class="row d-flex mt-5">
+                    <div class="col-md-6 d-flex align-items-center">
+                      <div class="text px-4 pt-5 pt-md-0 px-md-4 pr-md-5 ftco-animate">
+                        <h2 class="mb-4">Добро пожаловать на наш сайт о <span>спорте</span>!</h2>
+                        <p>Мы - команда энтузиастов, объединенных страстью к спорту. Наша цель - делиться последними новостями, увлекательными историями 
+                            и полезными советами из мира спорта.  Независимо от того, являетесь ли вы профессиональным спортсменом, любителем или просто интересуетесь 
+                            физической активностью, здесь вы найдете информацию, которая поможет вам достичь новых высот и наслаждаться здоровым образом жизни. </p>
+                        <p>На нашем сайте вы можете найти статьи о различных видах спорта, создавать свои собственные, участвовать в обсуждениях и делиться своими мнениями.</p>
+                        <p>Благодарим вас за посещение нашего сайта о спорте. Мы надеемся, что вы найдете здесь много интересной и полезной информации. 
+                            Присоединяйтесь к нам и вместе будем вдохновляться спортом!</p>
+                        <p>Данная система разработана студентом Радиотехнического колледжа, группы ИВ1-21, Семеновым Даниилом</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            
+            <!-- login -->
+            <section class="contact-section px-md-2  pt-5 not-active login">
+				<div class="container" style="height: 100%">
+					<div class="row d-flex contact-info">
+						<div class="col-md-12 mb-1">
+							<h2 class="h3">Авторизация</h2>
+						</div>
+					</div>
+					<div class="row block-9">
+						<div class="col-lg-6 d-flex">
+                            <form action="" class="bg-light p-5 contact-form login-form" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control login" placeholder="Your Login"
+                                        name="login">
+                                        <div class="invalid-feedback login-message"></div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control password" placeholder="Password"
+                                        name="password">
+                                        <div class="invalid-feedback password-message"></div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-primary py-3 px-5 login-btn">Вход</button>
+                                </div>
+                                <a href="" class="link" data-section="register">Создать аккаунт</a>
+                            </form>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- register -->
+            <section class="contact-section px-md-2 pt-5 not-active register">
+				<div class="container">
+					<div class="row d-flex contact-info">
+						<div class="col-md-12 mb-1 title-register">
+							<h2 class="h3">Регистрация</h2>
+						</div>
+					</div>
+					<div class="row block-9">
+						<div class="col-lg-6 d-flex">
+							<form action="" class="bg-light p-5 contact-form register-form" method="POST" enctype="multipart/form-data">
+								<div class="form-group">
+									<input type="text" class="form-control name" placeholder= "Your Name" name="name" value="">
+										<div class="invalid-feedback name-message"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control surname" placeholder="Your Surname" name="surname" value="">
+										<div class="invalid-feedback surname-message"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control patronymic" placeholder="Your Patronymic"
+										name="patronymic" value="">
+										<div class="invalid-feedback patronymic-message"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control login" placeholder="Your Login"
+										name="login" value="">
+										<div class="invalid-feedback login-message"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control email" placeholder="Your Email"
+										name="email" value="">
+										<div class="invalid-feedback email-message"></div>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control password" placeholder="Password"
+										name="password" value="">
+										<div class="invalid-feedback password-message"></div>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control password_confirmation" placeholder="Password repeat"
+										name="password_confirmation">
+										<div class="invalid-feedback password_confirmation-message"></div>
+								</div>
+
+								<div class="form-group">
+                                    <input name="upload_avatar" type="file" id="input_file_avatar" class="field field__file form-control upload_avatar input_avatar input_file">
+                                    <div class="invalid-feedback upload_avatar-message"></div>
+									<label class="field__file-wrapper" for="input_file_avatar">
+                                        <div class="field__file-button">Выбрать</div>
+                                        <div class="field__file-fake">Выберите аватар</div>
+                                    </label>
+                                    <div><img src="images/avatars/default.jpg" class="img-fluid input_avatar upload_image"/></br></div>
+                                    <a href="" class="not-active cancel_image">Очистить выбранное изображение</a></br>
+                                    <a href="" class="generate_avatar" >Сгенерировать аватар</a>
+                                    <div class="generate_avatar-message" style="font-size: 12px; font-family: 'Poppins', Arial, sans-serif;"></div>
+                                </div>
+
+								<div class="form-group">
+									<div class="form-check">
+										<input name="confirm" class="form-check-input confirm" type="checkbox" id="rules" aria-describedby="invalidCheck3Feedback" value="rules">
+										<label class="form-check-label" for="rules">
+											Согласие
+										</label>
+										<div class="invalid-feedback confirm-message"></div>
+									</div>
+								</div>
+								<div class="form-group">
+                                    <a class="register-btn" href=""><button class="btn btn-primary py-3 px-5">Регистрация</button></a>
+                                </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- post-action -->
+            <section class="contact-section px-md-2 pt-5 not-active post-action">
+				<div class="container">
+					<div class="row d-flex contact-info">
+						<div class="col-md-12 mb-1">
+							<h2 class="h3">Создание поста</h2>
+						</div>
+					</div>
+					<div class="row block-9">
+						<div class="col-lg-6 d-flex">
+							<form action="" class="bg-light p-5 contact-form post-action-form" method="POST" enctype="multipart/form-data">
+								<div class="form-group">
+									<input type="text" class="form-control title" placeholder="Post title" name="title">
+                                        <div class="invalid-feedback title-message"></div>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control preview" placeholder="Post preview" name="preview">
+                                        <div class="invalid-feedback preview-message"></div>
+                                </div>
+								<div class="form-group">
+									<textarea id="" cols="30" rows="10" class="form-control content" placeholder="Post content" name="content"></textarea> 
+                                        <div class="invalid-feedback content-message"></div>
+								</div>
+
+                                <div class="form-group past_image_post not-active">
+                                    <img src="" class="img-fluid past_image_post"/>
+                                </div>
+
+                                <div class="form-group">
+                                    <input name="upload_image_post" type="file" id="input_file_post" class="field field__file form-control input_file upload_image_post">
+                                    <div class="invalid-feedback upload_image_post-message"></div>
+                                    <label class="field__file-wrapper" for="input_file_post">
+                                        <div class="field__file-button">Выбрать</div>
+                                        <div class="field__file-fake">Выберите изображение поста</div>
+                                    </label>
+									<img src="" class="img-fluid upload_image"/><br>
+									<a href="" class="not-active cancel_image">Очистить выбранное изображение</a>
+                                </div>
+
+								<div class="form-group">
+									<button class="btn btn-primary py-3 px-5 creat-post-btn">Опубликовать</button>
+								</div>
+                                <a href="" class="cance-post-action link" data-section="blogs">Отмена</a>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <!-- post -->
+            <section class="ftco-no-pt ftco-no-pb not-active post">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 px-md-3 py-5 post-content">
+                            <!-- POST -->
+						</div>
+					</div><!-- END-->
+				</div>
+			</section>
+
+            
+		</div><!-- END COLORLIB-MAIN -->
+	</div><!-- END COLORLIB-PAGE -->
+
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"stroke="#F96D00" />
+        </svg>
+    </div>
+
+	<script src="js/jquery-3.7.0.min.js"></script>
+  	<!-- <script src="js/jquery.min.js"></script> -->
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="css/moment.min.js"></script>
+    <script src="css/daterangepicker.js"></script>
+    <script src="js/input_file.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#rules').click(function(e){
+				if (this.checked) {
+					$(this).removeClass('is-invalid');
+					$(this).addClass('is-valid');
+				} else {
+					$(this).removeClass('is-invalid');
+					$(this).removeClass('is-valid');
+				}
+                
+                $('#rulesFeedback').toggleClass('d-none');				
+            })
+        });
+    </script>
+
+	<script src="js/jquery.ajax.js"></script>
+
+</body>
+
+</html>
